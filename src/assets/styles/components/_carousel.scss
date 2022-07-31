@@ -1,0 +1,112 @@
+.carousel-layout {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 32px 120px;
+    gap: 32px;
+    .carousel-title {
+        display: flex; 
+        align-items: baseline; 
+        gap: 16px;
+        h1 {
+            text-transform: uppercase;
+            color: $light;
+            margin: 0;
+            font-family: 'Khand', sans-serif;
+            font-size: 64px;
+        }
+        .carousel-title-rating {
+            color: $light;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            span {
+                display: flex;
+                align-items: center;
+                font-family: 'Khand', sans-serif;
+                font-size: 20px;
+                opacity: 0.8;
+            }
+        }
+    }
+    .carousel-details {
+        display: flex;
+        gap: 32px;
+        ul {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+            margin: 0;
+            li {
+                padding: 0;
+                color: $light;
+                button {
+                    color: inherit !important;
+                    font-family: 'Quattrocento Sans', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 16px;
+                    opacity: 0.6;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .carousel-details-year {
+            color: $primary;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Quattrocento Sans', sans-serif;
+        }
+    }
+    p {
+        margin: 0;
+        max-width: 500px;
+        color: $light;
+        font-size: 16px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-weight: 600;
+    }
+}
+
+.ant-carousel-vertical .slick-dots li.slick-active, .ant-carousel-vertical .slick-dots li.slick-active button {
+    width: 8px;
+    height: 48px;
+    border-radius: 16px;
+}
+
+.ant-carousel .slick-dots li.slick-active {
+    margin-bottom: 8px;
+}
+
+.ant-carousel-vertical .slick-dots li {
+    width: 3px;
+    height: 16px;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+.ant-carousel-vertical .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: $primary;
+    opacity: 1;
+}
+
+.ant-carousel-vertical .slick-dots-right {
+    right: 16px;
+}
+
+.ant-carousel .slick-dots li button {
+    background: $light;
+}
+
+.ant-carousel .slick-list .slick-slide.slick-active {
+    height: 100%;
+}

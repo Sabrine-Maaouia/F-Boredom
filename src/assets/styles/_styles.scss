@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Quattrocento+Sans:wght@400;700&display=swap');
+
+@import "./variables";
+@import "./pages/pages";
+@import "./components/components";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $dark;
+}
+
+.f-page-layout {
+    background: transparent;
+}
+
+// font-family: 'Khand', sans-serif;
+// font-family: 'Quattrocento Sans', sans-serif;
