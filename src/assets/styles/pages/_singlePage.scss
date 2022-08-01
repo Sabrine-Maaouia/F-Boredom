@@ -1,0 +1,94 @@
+.f-single-page-container {
+    padding: 0 32px;
+    margin: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 64px;
+    .f-movie-poster {
+        height: 400px;
+        width: 250px;
+        min-width: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        img  {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .f-movie-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .f-movie-genre {
+            display: flex;
+            gap: 32px;
+            ul {
+                display: flex;
+                gap: 16px;
+                list-style: none;
+                margin: 0;
+                li {
+                    padding: 0;
+                    color: $light;
+                    button {
+                        color: inherit !important;
+                        font-family: 'Quattrocento Sans', sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 16px;
+                        opacity: 0.6;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .f-movie-year {
+            color: $light;
+            opacity: 0.8;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Quattrocento Sans', sans-serif;
+        }
+        .f-movie-rating {
+            display: flex;
+            align-items: center;
+            color: $light;
+            opacity: 0.8;
+            gap: 8px;
+        }
+        .f-movie-title  {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h1 {
+                color: $light;
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 96px;
+                font-family: 'Khand', sans-serif;
+                line-height: 86px;
+
+            }
+        }
+        p {
+            color: $light;
+            font-size: 16px;
+            font-family: 'Quattrocento Sans', sans-serif;
+        }
+    }
+    .f-recommandations {
+        width: 250px;
+        min-width: 250px;
+        h3 {
+            color: $light;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: 'Khand', sans-serif;
+        }
+    }
+}

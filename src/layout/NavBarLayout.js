@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Auth from "../features/auth";
+import {LoadingOutlined} from "@ant-design/icons"
 
-function NavBarLayout() {
+function NavBarLayout({setLoggedIn}) {
+  const [connected, setConnected] = useState(false);
+  const [user, setUser] = useState("");
+  
+  useEffect(() => {
+    if(localStorage.getItem("auth-token")) {
+      setConnected(true);
+      setUser(localStorage.getItem("user"))
+    }
+  },[])
+
+  useEffect(() => {
+    connected && setLoggedIn();
+  },[connected])
+
   return (
     <nav
       style={{
@@ -22,7 +38,10 @@ function NavBarLayout() {
           style={{ height: "60px", width: "auto", paddingLeft: "32px" }}
         />
       </Link>
-      <span style={{ color: "#fff", paddingRight: "32px" }}>username</span>
+      <div style={{paddingRight: 32}}>
+        { connected ? <span style={{color: "#fff"}}>{user}</span>
+         : <Auth  setConnected={() => setConnected(true)} />}
+      </div>
     </nav>
   );
 }

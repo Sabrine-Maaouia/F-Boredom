@@ -30,3 +30,86 @@ export const navImgs = [
     text: "have you read the latest chapter yet",
   },
 ];
+
+export const photos = [
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+  {
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    width: 1.2,
+    height: 2
+  },
+];

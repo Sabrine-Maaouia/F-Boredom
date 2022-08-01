@@ -4,6 +4,8 @@
 @import "./pages/pages";
 @import "./components/components";
 
+@import "../../features/auth/styles/styles";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,5 +28,144 @@ body {
     border: 0.5px solid $light;
 }
 
+.ant-input, .ant-input-password {
+    border-radius: 20px !important;
+    background-color: rgba(198, 209, 255, 0.13);
+    border-color: transparent;
+    color: $light;
+    input {
+        background-color: transparent;
+    }
+    .ant-input-password-icon {
+        color: $light;
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+            color: $primary;
+        } 
+    }
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input, .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+    background: rgba(198, 209, 255, 0.13);
+    input {
+        background: transparent;
+    }
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper, .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+    background: rgba(198, 209, 255, 0.13);
+    input {
+        background: transparent;
+    }
+}
+
+.ant-input-focused, .ant-input:focus, .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $primary;
+    box-shadow: 0 0 0 2px rgba(109, 250, 205, 0.2);
+    border-right-width: 1px;
+    outline: 0;
+}
+
+.ant-input:hover, .ant-input-password:hover {
+    border-color: $primary;
+    border-right-width: 1px;
+}
+
+
+input {
+    &::placeholder {
+        color: rgba(247, 248, 255, 0.4);
+    }
+    color: $light;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.ant-btn-primary {
+    color: $dark;
+    background: $primary;
+    opacity: 1;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    &:hover {
+        color: $dark;
+        background: $primary;
+        opacity: 0.8;
+    }
+}
+
+.f-img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      flex: 1 0 21%; /* explanation below */
+      margin: 5px;
+      height: 200px;
+      object-fit: cover;
+    }
+}
+
 // font-family: 'Khand', sans-serif;
 // font-family: 'Quattrocento Sans', sans-serif;
+
+
+.container {
+    padding: 40px 5%;
+  }
+  
+  .heading-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .heading-text span {
+    font-weight: 100;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Responsive image gallery rules begin*/
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image-gallery > li {
+    flex-basis: 200px; /*width: 250px;*/
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .image-gallery::after {
+    content: "";
+    flex-basis: 200px;
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+
+  // icons
+
+  .f-icon {
+      color: $primary;
+  }
+
+  .f-icon-text {
+      color: $light;
+      font-size: 24px;
+      font-family: 'Khand', sans-serif;
+  }

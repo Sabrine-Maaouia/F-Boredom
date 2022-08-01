@@ -3,15 +3,14 @@ import NavBarLayout from "../layout/NavBarLayout";
 import { navImgs } from "../utils/img.constants";
 import { Link } from "react-router-dom";
 
-function LandingPage() {
+function LandingPage({setLoggedIn}) {
   const [active, setActive] = useState("1");
   return (
     <div style={{ position: "relative", width: "100%" }}>
-      <NavBarLayout />
+      <NavBarLayout setLoggedIn={setLoggedIn} />
       <div className="f-gallery">
         {navImgs?.map((nav) => {
           let text = nav.text.split("you ");
-          console.log(nav.img);
           return (
             <Link
               to="movies"

@@ -1,0 +1,54 @@
+.ant-modal-content {
+    background-color: $dark;
+    .ant-modal-close-icon {
+        color: $light;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.ant-modal-header {
+    background: transparent;
+    border: none;
+}
+
+
+.ant-modal-title  {
+    text-transform: uppercase;
+    margin: 32px 0;
+    color: $light;
+    font-size: 32px;
+    font-family: 'Khand', sans-serif;
+}
+
+#signin, #signup  {
+    .ant-btn-link {
+        color: $light;
+        opacity: 0.8;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 16px;
+    }
+    .ant-btn-primary {
+        color: $dark;
+        background: $primary;
+        border: none;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 16px;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+}
+
+
+.f-form-footer {
+    color: rgba(247, 248, 255, 0.6);
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    .ant-btn-link {
+        font-weight: 700;
+        padding: 0;
+        color: $light;
+    }
+}
