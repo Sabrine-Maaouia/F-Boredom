@@ -3,14 +3,6 @@ import React, { useState } from "react";
 import { navImgs } from "../utils/img.constants";
 import { AliyunOutlined } from "@ant-design/icons";
 
-const contentStyle = {
-  height: "75vh",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  // background: `radial-gradient(89.71% 89.71% at 44.51% 7.12%, rgba(36, 58, 115, 0.2) 0%, #243A73 100%), url(${navImgs[0].img})`
-};
-
 function FCarousel() {
   const [data, setData] = useState(navImgs);
 
@@ -19,9 +11,9 @@ function FCarousel() {
   return (
     <Carousel dotPosition={"right"}>
       {data.map((nav) => (
-        <div>
+        <div key={nav.id} style={{ height: "100%" }}>
           <div
-            className="carousel-layout"
+            className="f-carousel-layout"
             style={{
               background: `radial-gradient(89.71% 89.71% at 44.51% 7.12%, rgba(36, 58, 115, 0.2) 0%, #243A73 100%), url(${nav.img})`,
               backgroundRepeat: "no-repeat",
@@ -29,7 +21,7 @@ function FCarousel() {
             }}
           >
             <div>
-              <div className="carousel-title">
+              <div className="carousel-title" style={{ marginBottom: 8 }}>
                 <h1>{nav.name}</h1>
                 <div className="carousel-title-rating">
                   <AliyunOutlined style={{ color: "inherit" }} />

@@ -16,6 +16,14 @@ body {
 
 .f-page-layout {
     background: transparent;
+    .f-page-container {
+        padding: 32px;
+    }
+}
+
+.f-divider {
+    opacity: 0.15;
+    border: 0.5px solid $light;
 }
 
 // font-family: 'Khand', sans-serif;

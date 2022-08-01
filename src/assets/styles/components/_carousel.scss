@@ -1,5 +1,6 @@
-.carousel-layout {
-    height: 75vh;
+.f-carousel-layout {
+    height: 622px;
+    max-height: 622px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -70,43 +71,37 @@
         font-weight: 600;
     }
 }
+.f-page-layout {
+    .ant-carousel-vertical .slick-dots li.slick-active, .ant-carousel-vertical .slick-dots li.slick-active button {
+        width: 8px;
+        height: 48px;
+        border-radius: 16px;
+        margin-bottom: 8px;
+    }
+    .ant-carousel-vertical .slick-dots li {
+        width: 3px;
+        height: 16px;
+        margin: 0;
+        vertical-align: baseline;
+    }
 
-.ant-carousel-vertical .slick-dots li.slick-active, .ant-carousel-vertical .slick-dots li.slick-active button {
-    width: 8px;
-    height: 48px;
-    border-radius: 16px;
+    .ant-carousel-vertical .slick-dots li button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    .ant-carousel .slick-dots li.slick-active button {
+        background: $primary;
+        opacity: 1;
+    }
+
+    .ant-carousel-vertical .slick-dots-right {
+        right: 32px;
+    }
+
+    .ant-carousel .slick-dots li button {
+        background: $light;
+    }
 }
 
-.ant-carousel .slick-dots li.slick-active {
-    margin-bottom: 8px;
-}
 
-.ant-carousel-vertical .slick-dots li {
-    width: 3px;
-    height: 16px;
-    margin: 0;
-    vertical-align: baseline;
-}
-
-.ant-carousel-vertical .slick-dots li button {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.ant-carousel .slick-dots li.slick-active button {
-    background: $primary;
-    opacity: 1;
-}
-
-.ant-carousel-vertical .slick-dots-right {
-    right: 16px;
-}
-
-.ant-carousel .slick-dots li button {
-    background: $light;
-}
-
-.ant-carousel .slick-list .slick-slide.slick-active {
-    height: 100%;
-}
